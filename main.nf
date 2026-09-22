@@ -114,11 +114,11 @@ process fastqc {
     path(fastq)
 
     output:
-    path(fastqc_out)
+    path("*_fastqc.zip")
 
     script:
     fastqc_out = fastq.getName().replaceAll('.fastq.gz', '_fastqc.zip')
-
+    
     """
     fastqc $fastq -o .
     """

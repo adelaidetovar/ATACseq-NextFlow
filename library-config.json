@@ -1,33 +1,82 @@
 {
     "libraries": {
-        "119543": {
-            "genome": "rn6",
+        "AT0304": {
+            "genome": "rn7",
             "readgroups": {
-                "119543___2684___L001": {
-                    "1": "/lab/work/porchard/data/fastq/atacseq/119543___2684___L001.1.fastq.gz",
-                    "2": "/lab/work/porchard/data/fastq/atacseq/119543___2684___L001.2.fastq.gz"
+                "AT0304": {
+                    "1": "/nfs/turbo/umms-kitzmanj/oldvol1/seqruns/2023/mg/20230914a_novaseqx_admera_lane_s4_pe150/mapped_bypool/seqlib2023_180/ATS0304.r1.fq.gz",
+                    "2": "/nfs/turbo/umms-kitzmanj/oldvol1/seqruns/2023/mg/20230914a_novaseqx_admera_lane_s4_pe150/mapped_bypool/seqlib2023_180/ATS0304.r2.fq.gz"
                 }
             }
         },
-        "119544": {
-            "genome": "rn6",
+        "AT0305": {
+            "genome": "rn7",
             "readgroups": {
-                "119544___2684___L001": {
-                    "1": "/lab/work/porchard/data/fastq/atacseq/119544___2684___L001.1.fastq.gz",
-                    "2": "/lab/work/porchard/data/fastq/atacseq/119544___2684___L001.2.fastq.gz"
+                "AT0305": {
+                    "1": "/nfs/turbo/umms-kitzmanj/oldvol1/seqruns/2023/mg/20230914a_novaseqx_admera_lane_s4_pe150/mapped_bypool/seqlib2023_180/ATS0305.r1.fq.gz",
+                    "2": "/nfs/turbo/umms-kitzmanj/oldvol1/seqruns/2023/mg/20230914a_novaseqx_admera_lane_s4_pe150/mapped_bypool/seqlib2023_180/ATS0305.r2.fq.gz"
                 }
             }
         },
-        "119569": {
-            "genome": "rn6",
+        "AT0306": {
+            "genome": "rn7",
             "readgroups": {
-                "119569___2752___L003": {
-                    "1": "/lab/work/porchard/data/fastq/atacseq/119569___2752___L003.1.fastq.gz",
-                    "2": "/lab/work/porchard/data/fastq/atacseq/119569___2752___L003.2.fastq.gz"
-                },
-                "119569___2752___L004": {
-                    "1": "/lab/work/porchard/data/fastq/atacseq/119569___2752___L004.1.fastq.gz",
-                    "2": "/lab/work/porchard/data/fastq/atacseq/119569___2752___L004.2.fastq.gz"
+                "AT0306": {
+                    "1": "/nfs/turbo/umms-kitzmanj/oldvol1/seqruns/2023/mg/20230914a_novaseqx_admera_lane_s4_pe150/mapped_bypool/seqlib2023_180/ATS0306.r1.fq.gz",
+                    "2": "/nfs/turbo/umms-kitzmanj/oldvol1/seqruns/2023/mg/20230914a_novaseqx_admera_lane_s4_pe150/mapped_bypool/seqlib2023_180/ATS0306.r2.fq.gz"
+                }
+            }
+        },
+        "AT0307": {
+            "genome": "rn7",
+            "readgroups": {
+                "AT0307": {
+                    "1": "/nfs/turbo/umms-kitzmanj/oldvol1/seqruns/2023/mg/20230914a_novaseqx_admera_lane_s4_pe150/mapped_bypool/seqlib2023_180/ATS0307.r1.fq.gz",
+                    "2": "/nfs/turbo/umms-kitzmanj/oldvol1/seqruns/2023/mg/20230914a_novaseqx_admera_lane_s4_pe150/mapped_bypool/seqlib2023_180/ATS0307.r2.fq.gz"
+                }
+            }
+        },
+        "AT0308": {
+            "genome": "rn7",
+            "readgroups": {
+                "AT0308": {
+                    "1": "/nfs/turbo/umms-kitzmanj/oldvol1/seqruns/2023/mg/20230914a_novaseqx_admera_lane_s4_pe150/mapped_bypool/seqlib2023_180/ATS0308.r1.fq.gz",
+                    "2": "/nfs/turbo/umms-kitzmanj/oldvol1/seqruns/2023/mg/20230914a_novaseqx_admera_lane_s4_pe150/mapped_bypool/seqlib2023_180/ATS0308.r2.fq.gz"
+                }
+            }
+        },
+        "AT0309": {
+            "genome": "rn7",
+            "readgroups": {
+                "AT0309": {
+                    "1": "/nfs/turbo/umms-kitzmanj/oldvol1/seqruns/2023/mg/20230914a_novaseqx_admera_lane_s4_pe150/mapped_bypool/seqlib2023_180/ATS0309.r1.fq.gz",
+                    "2": "/nfs/turbo/umms-kitzmanj/oldvol1/seqruns/2023/mg/20230914a_novaseqx_admera_lane_s4_pe150/mapped_bypool/seqlib2023_180/ATS0309.r2.fq.gz"
+                }
+            }
+        },
+        "AT0310": {
+            "genome": "rn7",
+            "readgroups": {
+                "AT0310": {
+                    "1": "/nfs/turbo/umms-kitzmanj/oldvol1/seqruns/2023/mg/20230914a_novaseqx_admera_lane_s4_pe150/mapped_bypool/seqlib2023_180/ATS0310.r1.fq.gz",
+                    "2": "/nfs/turbo/umms-kitzmanj/oldvol1/seqruns/2023/mg/20230914a_novaseqx_admera_lane_s4_pe150/mapped_bypool/seqlib2023_180/ATS0310.r2.fq.gz"
+                }
+            }
+        },
+        "AT0311": {
+            "genome": "rn7",
+            "readgroups": {
+                "AT0311": {
+                    "1": "/nfs/turbo/umms-kitzmanj/oldvol1/seqruns/2023/mg/20230914a_novaseqx_admera_lane_s4_pe150/mapped_bypool/seqlib2023_180/ATS0311.r1.fq.gz",
+                    "2": "/nfs/turbo/umms-kitzmanj/oldvol1/seqruns/2023/mg/20230914a_novaseqx_admera_lane_s4_pe150/mapped_bypool/seqlib2023_180/ATS0311.r2.fq.gz"
+                }
+            }
+        },"AT0312": {
+            "genome": "rn7",
+            "readgroups": {
+                "AT0312": {
+                    "1": "/nfs/turbo/umms-kitzmanj/oldvol1/seqruns/2023/mg/20230914a_novaseqx_admera_lane_s4_pe150/mapped_bypool/seqlib2023_180/ATS0312.r1.fq.gz",
+                    "2": "/nfs/turbo/umms-kitzmanj/oldvol1/seqruns/2023/mg/20230914a_novaseqx_admera_lane_s4_pe150/mapped_bypool/seqlib2023_180/ATS0312.r2.fq.gz"
                 }
             }
         }
