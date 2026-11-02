@@ -80,7 +80,7 @@ def library_and_readgroup_to_fastqs (library, readgroup) {
 
 process trim {
 
-    publishDir "${params.results}/trim", mode: 'rellink'
+    publishDir "${params.results}/trim", mode: 'symlink'
     container 'library://porchard/default/cta:20220113'
     errorStrategy 'retry'
     maxRetries 1
@@ -102,7 +102,7 @@ process trim {
 
 process fastqc {
 
-    publishDir "${params.results}/fastqc", mode: 'rellink'
+    publishDir "${params.results}/fastqc", mode: 'symlink'
     container 'library://porchard/default/general:20220107'
     errorStrategy 'retry'
     maxRetries 1
@@ -128,7 +128,7 @@ process fastqc {
 
 process multiqc {
 
-    publishDir "${params.results}/multiqc/${before_or_after_trim}", mode: 'rellink', overwrite: true
+    publishDir "${params.results}/multiqc/${before_or_after_trim}", mode: 'symlink', overwrite: true
     container 'library://porchard/default/general:20220107'
     memory '8 GB'
     time '6h'
@@ -149,7 +149,7 @@ process multiqc {
 
 process bwa {
 
-    publishDir "${params.results}/bwa", mode: 'rellink'
+    publishDir "${params.results}/bwa", mode: 'symlink'
     container 'library://porchard/default/bwa:0.7.15'
     memory '50 GB'
     cpus 12
@@ -172,7 +172,7 @@ process bwa {
 
 process merge_mapped {
 
-    publishDir "${params.results}/merge", mode: 'rellink'
+    publishDir "${params.results}/merge", mode: 'symlink'
     container 'library://porchard/default/general:20220107'
     errorStrategy 'retry'
     maxRetries 1
@@ -193,7 +193,7 @@ process merge_mapped {
 
 process mark_duplicates {
 
-    publishDir "${params.results}/mark_duplicates", mode: 'rellink'
+    publishDir "${params.results}/mark_duplicates", mode: 'symlink'
     container 'library://porchard/default/general:20220107'
     errorStrategy 'retry'
     maxRetries 1
@@ -216,7 +216,7 @@ process mark_duplicates {
 
 process prune {
 
-    publishDir "${params.results}/prune", mode: 'rellink'
+    publishDir "${params.results}/prune", mode: 'symlink'
     container 'library://porchard/default/general:20220107'
     memory '3 GB'
     time '5h'
@@ -258,7 +258,7 @@ process bamtobed {
 
 process macs2_broad {
 
-    publishDir "${params.results}/macs2/broad", mode: 'rellink'
+    publishDir "${params.results}/macs2/broad", mode: 'symlink'
     container 'library://porchard/default/general:20220107'
     time '5h'
     memory '8 GB'
@@ -279,7 +279,7 @@ process macs2_broad {
 
 process macs2_narrow {
 
-    publishDir "${params.results}/macs2/narrow", mode: 'rellink'
+    publishDir "${params.results}/macs2/narrow", mode: 'symlink'
     container 'library://porchard/default/general:20220107'
     time '5h'
     memory '8 GB'
@@ -301,7 +301,7 @@ process macs2_narrow {
 
 process extend_summits {
 
-    publishDir "${params.results}/macs2/narrow", mode: 'rellink'
+    publishDir "${params.results}/macs2/narrow", mode: 'symlink'
     container 'library://porchard/default/general:20220107'
     time '1h'
     memory '8 GB'
@@ -321,7 +321,7 @@ process extend_summits {
 
 process blacklist_filter {
 
-    publishDir "${params.results}/macs2/${macs2_subdir}", mode: 'rellink'
+    publishDir "${params.results}/macs2/${macs2_subdir}", mode: 'symlink'
     container 'library://porchard/default/general:20220107'
     time '1h'
 
@@ -347,7 +347,7 @@ process blacklist_filter {
 
 process bigwig {
 
-    publishDir "${params.results}/bigwig", mode: 'rellink'
+    publishDir "${params.results}/bigwig", mode: 'symlink'
     container 'library://porchard/default/general:20220107'
     time '5h'
     memory '8 GB'
@@ -373,7 +373,7 @@ process bigwig {
 
 process plot_signal_at_tss {
 
-    publishDir "${params.results}/bigwig/plot", mode: 'rellink', overwrite: true
+    publishDir "${params.results}/bigwig/plot", mode: 'symlink', overwrite: true
     container 'library://porchard/default/general:20220107'
     errorStrategy 'retry'
     maxRetries 1
@@ -395,7 +395,7 @@ process plot_signal_at_tss {
 
 process ataqv {
 
-    publishDir "${params.results}/ataqv", mode: 'rellink'
+    publishDir "${params.results}/ataqv", mode: 'symlink'
     container 'library://porchard/default/ataqv:1.3.0'
     errorStrategy 'retry'
     maxRetries 1
@@ -421,7 +421,7 @@ process ataqv {
 
 process ataqv_viewer {
 
-    publishDir "${params.results}/ataqv-viewer", mode: 'rellink'
+    publishDir "${params.results}/ataqv-viewer", mode: 'symlink'
     container 'library://porchard/default/ataqv:1.3.0'
     errorStrategy 'retry'
     maxRetries 1
